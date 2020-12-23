@@ -15,9 +15,7 @@ function Form() {
   return (
     <div>
       {!isSubmitted ? (
-        <SignUpForm
-          /* emailProfile = {emailProfileHandler} */ submitForm={submitForm}
-        />
+        <SignUpForm submitForm={submitForm} />
       ) : (
         <SuccessForm username={username} />
       )}
