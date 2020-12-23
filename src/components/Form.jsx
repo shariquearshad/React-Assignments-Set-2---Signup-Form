@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import SignUpForm from "./SignUpForm";
+import SignUpForm from "./Signupform";
 import SuccessForm from "./SuccessForm";
 
 function Form() {
   const [isSubmitted, setIsSubmitted] = useState(false);
-  /* const [emailValue, setEmailValue] = useState(""); */
   let username = "";
 
   function submitForm(item) {
@@ -13,10 +12,6 @@ function Form() {
     setIsSubmitted(true);
   }
 
-  /* function emailProfileHandler(item) {
-        setEmailValue({emailValue: item});
-        console.log("inside emailProfile: "+emailValue);
-    } */
   return (
     <div>
       {!isSubmitted ? (
